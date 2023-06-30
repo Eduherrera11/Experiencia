@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<title>Tarea de clase 8</title>
+
+<meta name="descrption" content="Pagina de ejercicios clase 8 html">
+
+<meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+<meta name="author" content="@eduardo_ahf">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    
+<header>
+
+    <h1><cite>Programando en HTML</cite></h1>
+    <hr>
+    <p><a href="Maquetas.html"> Volver atr&aacute;s</a></p>
+</header>
+
+<main>
+    <h2>Informaci&oacute;n sobre el producto</h2>
+    <form action="" name="Registro" method="get">
+
+        <fieldset>
+            <legend>Datos B&aacute;sicos</legend>
+            <label for="name">Nombre</label><br>
+            <input type="text" name="nombre" placeholder="Carlos">
+            <br>
+
+            <br>
+            <label for="desc">Descripci&oacute;n</label><br>
+            <textarea name="descripcion" id="desc" cols="30" rows="10"></textarea>
+            <br>
+
+            <br>
+            <label for="foto">Foto</label><br>
+            <input type="file" id="foto" name="foto" >
+            <br>
+
+            <br>
+            <label for="con">
+                <input type="checkbox" name="añadido" id="con">
+                Añadir contador de visitas
+            </label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos econ&oacute;micos</legend>
+            <label for="price">Precio</label>
+            <input type="text" name="precio" id="price"> €
+            <label for="islr">Impuesto</label>
+            <select name="Impuesto" id="islr" required>
+                <option value="">-</option>
+                <option value="4%">4%</option>
+                <option value="7%">7%</option>
+                <option value="16%">16%</option>
+                <option value="25%">25%</option>
+            </select>
+
+            <br>
+
+            <br>
+            <p>Promoci&oacute;n</p>
+            <p>
+                <input type="radio" name="promoci&oacute;n" value="ninguno" id="nin">
+                <label for="nin">Ninguno</label>
+            </p>
+
+            <p>
+                <input type="radio" name="promoci&oacute;n" value="Transporte Gratuito" id="trans">
+                <label for="trans">Transporte Gratuito</label>
+            </p>
+
+            <p>
+                <input type="radio" name="promoci&oacute;n" value="Descuento 5%" id="des">
+                <label for="des">Descuento 5%</label>
+            </p>
+        
+
+        </fieldset>
+
+    </form>
+</main>
+
+
+</body>
+
+
+
+
+
+
+<hr>
+<footer><cite>Ewa since 2023</cite></footer>
+
+</html>

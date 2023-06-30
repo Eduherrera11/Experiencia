@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width, initial-scale=1.0">
+
+<head>
+    <title>Ejercicio 2 del Tema 7.1</title>
+    <script>
+            function revertirLista() {
+        const lista = document.getElementById("miLista");
+        const elementos = Array.from(lista.children);
+        elementos.reverse();
+        lista.innertHTML = "";
+
+        for (let i = 0; i < elementos.length; i++) {
+            lista.appendChild(elementos[i]);
+        }
+    }
+    </script>
+</head>
+
+<body>
+ <H1>Top 5 paises que planeo visitar pronto</H1> 
+ <hr>  
+
+<p><cite>Las mejores vacaciones del mundo </cite> seran en:</p>
+
+    <ol id="miLista"> 
+        <li>Colombia</li>
+        <li>Mexico</li>
+        <li>Estados Unidos</li>
+        <li>España</li>
+        <li>Italia</li>
+    </ol>
+    <button onclick="revertirLista()">Revertir Lista</button>
+
+</body>
+
+</html>
+
